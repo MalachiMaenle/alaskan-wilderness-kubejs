@@ -9,4 +9,14 @@ ServerEvents.recipes(event => {
 		I: 'minecraft:iron_ingot'
 	});
 });
+/*
+create:
+whisk
+plates
 
+overgeared:
+smelt nuggets
+
+spartan weaponry
+
+*/

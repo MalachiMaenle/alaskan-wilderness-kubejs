@@ -1,43 +1,39 @@
 ServerEvents.recipes(event => {
 	event.shaped('alekiships:oarlock', [
-		'AAA',
-		'AIA',
+		'   ',
+		' I ',
 		'III'
 	], {
-		A: "minecraft:air",
 		I: "minecraft:copper_ingot"
 	});
 
 	event.shaped('alekiships:cleat', [
-		'AAA',
+		'   ',
 		'III',
-		'NAN'
+		'N N'
 	], {
-		A: "minecraft:air",
-		N: "create:copper_nugget",
+		N: "#forge:nuggets/copper",
 		I: "minecraft:copper_ingot"
 	});
 
 	event.shaped('alekiships:anchor', [
 		'NIN',
-		'AIA',
+		' I ',
 		'IBI'
 	], {
-		A: "minecraft:air",
-		N: "create:copper_nugget",
+		N: "#forge:nuggets/copper",
 		I: "minecraft:copper_ingot",
 		B: "minecraft:copper_block"
 	});
 
 	event.shaped('alekiships:cannon', [
 		'BBB',
-		'SSA',
-		'NAN'
+		'SS ',
+		'N N'
 	], {
-		A: "minecraft:air",
-		N: "create:copper_nugget",
+		N: "#forge:nuggets/copper",
 		B: "minecraft:copper_block",
-		S: "#minecraft:wooden_slabs",
+		S: "#minecraft:wooden_slabs"
 	});
 
 	event.shapeless('alekiships:cannonball', [

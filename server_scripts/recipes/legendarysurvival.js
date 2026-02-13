@@ -5,15 +5,14 @@ ServerEvents.recipes(event => {
 		.id('kubejs:purified_water_on_campfire'
 		);
 
-	// event.shaped('legendarysurvivaloverhaul:heater', [
-	// 	'ASA',
-	// 	'SFS',
-	// 	'BCB'
-	// ], {
-	// 	A: 'minecraft:air',
-	// 	S: 'overgeared:steel_ingot',
-	// 	B: 'overgeared:steel_block',
-	// 	C: "minecraft:coal_block",
-	// 	F: 'minecraft:blast_furnace'
-	// });
+	event.shaped('legendarysurvivaloverhaul:heater', [
+		' S ',
+		'SFS',
+		'BCB'
+	], {
+		S: 'overgeared:steel_ingot',
+		B: 'overgeared:steel_block',
+		C: "minecraft:coal_block",
+		F: 'minecraft:blast_furnace'
+	});
 })

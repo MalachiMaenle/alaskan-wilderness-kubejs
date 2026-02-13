@@ -4,36 +4,14 @@ const scaffoldingVariants = [
 ]
 
 ServerEvents.recipes(event => {
-	// event.shapeless('minecraft:iron_sword', [
-	// 	'overgeared:iron_sword_blade',
-	// 	'minecraft:stick'
-	// ]);
-	// event.shapeless('minecraft:iron_pickaxe', [
-	// 	'overgeared:iron_pickaxe_head',
-	// 	'minecraft:stick'
-	// ]);
-	// event.shapeless('minecraft:iron_axe', [
-	// 	'overgeared:iron_axe_head',
-	// 	'minecraft:stick'
-	// ]);
-	// event.shapeless('minecraft:iron_shovel', [
-	// 	'overgeared:iron_shovel_head',
-	// 	'minecraft:stick'
-	// ]);
-	// event.shapeless('minecraft:iron_hoe', [
-	// 	'overgeared:iron_hoe_head',
-	// 	'minecraft:stick'
-	// ]);
-
 	event.shaped('minecraft:anvil', [
 		'IBI',
-		'AIA',
+		' I ',
 		'SSS'
 	], {
 		B: 'minecraft:iron_block',
 		I: 'minecraft:iron_ingot',
-		S: '#forge:stone',
-		A: 'minecraft:airx'
+		S: '#forge:stone'
 	});
 
 	event.shapeless('2x minecraft:string', [
