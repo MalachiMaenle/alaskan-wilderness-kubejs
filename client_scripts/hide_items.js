@@ -14,16 +14,21 @@ JEIEvents.hideItems(event => {
 		"notreechopping:gold_knife",
 		"notreechopping:diamond_knife",
 		"notreechopping:netherite_knife",
+
 		'notreepunching:iron_mattock',
 		'notreepunching:gold_mattock',
 		'notreepunching:diamond_mattock',
 		'notreepunching:netherite_mattock',
+
+		"hot_iron:iron_plate",
 
 		"overgeared:stone_sword_blade",
 		"overgeared:stone_pickaxe_head",
 		"overgeared:stone_axe_head",
 		"overgeared:stone_shovel_head",
 		"overgeared:stone_hoe_head",
-		"overgeared:copper_nugget"
+		"overgeared:copper_nugget",
+
+		"legendarysurvivaloverhaul:heart_container"
 	])
 })

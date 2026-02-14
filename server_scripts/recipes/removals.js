@@ -1,5 +1,6 @@
 const removed_recipes = [
 	"minecraft:anvil",
+	"minecraft:lodestone",
 	"minecraft:stone_sword",
 	"minecraft:stone_pickaxe",
 	"minecraft:stone_axe",
@@ -13,11 +14,20 @@ const removed_recipes = [
 	"create:iron_sheet",
 	"create:golden_sheet",
 	"create:brass_sheet",
-	"create:sturdy_sheet",
+
+	"create:wrench",
+	"create:shaft",
+	"create:propeller",
+	"create:whisk",
+	"create:brass_hand",
+	"create:electron_tube",
+	"create:transmitter",
+	"create:goggles",
 
 	"farmersdelight:cooking_pot",
 	"farmersdelight:stove",
 	"farmersdelight:flint_knife",
+	"delightful:steel_knife",
 
 	"legendarysurvivaloverhaul:heart_container",
 	"legendarysurvivaloverhaul:heater",

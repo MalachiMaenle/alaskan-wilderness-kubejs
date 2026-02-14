@@ -14,6 +14,15 @@ ServerEvents.recipes(event => {
 		S: '#forge:stone'
 	});
 
+	event.shaped('minecraft:lodestone', [
+		'CCC',
+		'CIC',
+		'CCC'
+	], {
+		C: "minecraft:chiseled_stone_bricks",
+		I: 'minecraft:iron_ingot'
+	});
+
 	event.shapeless('2x minecraft:string', [
 		'minecraft:cobweb',
 		'#notreepunching:knives'

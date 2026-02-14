@@ -36,3 +36,10 @@ ServerEvents.recipes(event => {
 	})
 });
 
+BlockEvents.rightClicked("salt_cauldron", (event) => {
+	if (event.item.id == "create:wheat_flour") {
+		event.block.popItem('farmersdelight:wheat_dough');
+		event.item.count -= 1;
+		world.playSound(null, block.x, block.y, block.z, 'minecraft:item.craft', 1.0, 1.0);
+	}
+});

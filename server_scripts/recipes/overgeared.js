@@ -3,8 +3,6 @@ const plates = [
 	{ ingot: "minecraft:iron_ingot", plate: "overgeared:iron_plate", count: 1 },
 	{ ingot: "overgeared:steel_ingot", plate: "overgeared:steel_plate", count: 1 },
 
-	{ ingot: "minecraft:gold_ingot", plate: "create:golden_sheet", count: 1 },
-
 	{ ingot: "overgeared:copper_plate", plate: "create:copper_sheet", count: 2 },
 	{ ingot: "overgeared:iron_plate", plate: "create:iron_sheet", count: 2 },
 
@@ -36,6 +34,28 @@ ServerEvents.recipes(event => {
 			}
 		})
 	});
+	event.custom({
+		type: 'overgeared:forging',
+		category: 'misc',
+		hammering: 3,
+		has_quality: false,
+		need_quenching: false,
+		needs_minigame: false,
+		show_notification: true,
+		quality_difficulty: 'none',
+		tier: "stone",
+		pattern: [
+			'#'
+		],
+		key: {
+			'#': {
+				item: "minecraft:gold_ingot"
+			}
+		},
+		result: {
+			item: "create:golden_sheet"
+		}
+	})
 	event.custom({
 		type: 'overgeared:forging',
 		category: 'misc',
