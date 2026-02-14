@@ -49,7 +49,7 @@ ServerEvents.tags('item', event => {
 	));
 
 	event.add('food_spoiling:has_bowl', spoilables.filter(i =>
-		i.includes('soup') || i.includes('stew') || i.includes('custard') || i.includes('broth') || i.includes('salad') || i.includes('block')
+		i.includes('soup') || i.includes('stew') || i.includes('custard') || i.includes('broth') || i.includes('salad') || i.includes('block') || i.includes('bowl') || i.includes('sinigang') || i.includes('chili')
 	));
 
 	event.add('food_spoiling:raw_products', spoilables.filter(i =>
