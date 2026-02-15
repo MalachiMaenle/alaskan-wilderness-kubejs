@@ -20,8 +20,6 @@ JEIEvents.hideItems(event => {
 		'notreepunching:diamond_mattock',
 		'notreepunching:netherite_mattock',
 
-		"hot_iron:iron_plate",
-
 		"overgeared:stone_sword_blade",
 		"overgeared:stone_pickaxe_head",
 		"overgeared:stone_axe_head",

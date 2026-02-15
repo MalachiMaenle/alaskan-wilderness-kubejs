@@ -33,7 +33,7 @@ ServerEvents.tags('item', event => {
 	));
 
 	event.add('food_spoiling:fish', spoilables.filter(i =>
-		i.includes('cod') || i.includes('salmon') || i.includes('squid') || i.includes('fish') || i.includes('bass')
+		i.includes('cod') || i.includes('salmon_slice') || i.includes('salmon_roll') || i.includes('squid') || i.includes('fish') || i.includes('bass')
 	));
 
 	event.add('food_spoiling:fruits', spoilables.filter(i =>

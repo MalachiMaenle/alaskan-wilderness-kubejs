@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
 	event.shapeless('2x minecraft:string', [
 		'minecraft:cobweb',
 		'#notreepunching:knives'
-	]);
+	]).damageIngredient('#notreepunching:knives');
 
 	scaffoldingVariants.forEach(variant => {
 		event.shaped('6x minecraft:scaffolding', [

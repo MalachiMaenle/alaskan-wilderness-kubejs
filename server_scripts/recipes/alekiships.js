@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
 	event.shaped('alekiships:oarlock', [
-		'   ',
 		' I ',
 		'III'
 	], {
@@ -8,7 +7,6 @@ ServerEvents.recipes(event => {
 	});
 
 	event.shaped('alekiships:cleat', [
-		'   ',
 		'III',
 		'N N'
 	], {

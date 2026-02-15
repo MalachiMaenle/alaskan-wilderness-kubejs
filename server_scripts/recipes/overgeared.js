@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
 		quality_difficulty: 'none',
 		tier: "stone",
 		pattern: [
-			'#'
+			'###'
 		],
 		key: {
 			'#': {
@@ -53,136 +53,10 @@ ServerEvents.recipes(event => {
 			}
 		},
 		result: {
-			item: "create:golden_sheet"
+			item: "create:golden_sheet",
+			count: 3
 		}
 	})
-	event.custom({
-		type: 'overgeared:forging',
-		category: 'misc',
-		hammering: 4,
-		has_quality: false,
-		need_quenching: false,
-		needs_minigame: false,
-		show_notification: true,
-		quality_difficulty: 'none',
-		tier: "iron",
-		pattern: [
-			'DD',
-			'II'
-		],
-		key: {
-			'D': { item: "minecraft:diamond" },
-			'I': { item: "overgeared:steel_plate" }
-		},
-		result: {
-			item: "hot_iron:diamond_plate"
-		}
-	});
-
-	// #region iron armor
-	event.custom({
-		type: "overgeared:forging",
-		category: "armors",
-		hammering: 3,
-		has_polishing: false,
-		has_quality: true,
-		key: {
-			"P": { item: "overgeared:iron_plate" },
-			"L": { item: "minecraft:leather_helmet" }
-		},
-		minimum_quality: "poor",
-		need_quenching: false,
-		needs_minigame: false,
-		pattern: [
-			"PPP",
-			"PLP"
-		],
-		quality_difficulty: "none",
-		requires_blueprint: false,
-		result: {
-			item: "minecraft:iron_helmet"
-		},
-		show_notification: true,
-		tier: "stone"
-	}).id(`kubejs:iron_helmet`);
-	event.custom({
-		type: "overgeared:forging",
-		category: "armors",
-		hammering: 5,
-		has_polishing: false,
-		has_quality: true,
-		key: {
-			"P": { item: "overgeared:iron_plate" },
-			"S": { item: "hot_iron:iron_armor_strap" }
-		},
-		minimum_quality: "poor",
-		need_quenching: false,
-		needs_minigame: false,
-		pattern: [
-			"S S",
-			"PPP",
-			"PPP"
-		],
-		quality_difficulty: "none",
-		requires_blueprint: false,
-		result: {
-			item: "minecraft:iron_chestplate"
-		},
-		show_notification: true,
-		tier: "stone"
-	}).id(`kubejs:iron_chestplate`);
-	event.custom({
-		type: "overgeared:forging",
-		category: "armors",
-		hammering: 4,
-		has_polishing: false,
-		has_quality: true,
-		key: {
-			"P": { item: "overgeared:iron_plate" },
-			"S": { item: "hot_iron:iron_armor_strap" }
-		},
-		minimum_quality: "poor",
-		need_quenching: false,
-		needs_minigame: false,
-		pattern: [
-			"SPS",
-			"P P",
-			"P P"
-		],
-		quality_difficulty: "none",
-		requires_blueprint: false,
-		result: {
-			item: "minecraft:iron_leggings"
-		},
-		show_notification: true,
-		tier: "stone"
-	}).id(`kubejs:iron_leggings`);
-	event.custom({
-		type: "overgeared:forging",
-		category: "armors",
-		hammering: 3,
-		has_polishing: false,
-		has_quality: true,
-		key: {
-			"P": { item: "overgeared:iron_plate" },
-			"S": { item: "hot_iron:iron_armor_strap" }
-		},
-		minimum_quality: "poor",
-		need_quenching: false,
-		needs_minigame: false,
-		pattern: [
-			"S S",
-			"P P"
-		],
-		quality_difficulty: "none",
-		requires_blueprint: false,
-		result: {
-			item: "minecraft:iron_boots"
-		},
-		show_notification: true,
-		tier: "stone"
-	}).id(`kubejs:iron_boots`);
-	// #endregion
 
 	// #region steel armor
 	event.custom({

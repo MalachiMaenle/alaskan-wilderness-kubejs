@@ -10,9 +10,9 @@ ServerEvents.recipes(event => {
 		quality_difficulty: 'none',
 		tier: "stone",
 		pattern: [
-			'GG ',
-			'GC ',
-			' S '
+			'GG',
+			'GC',
+			' S'
 		],
 		key: {
 			'G': { item: 'create:golden_sheet' },
@@ -223,7 +223,7 @@ ServerEvents.recipes(event => {
 		key: {
 			'C': { item: 'create:cogwheel' },
 			'I': { item: 'create:incomplete_precision_mechanism' },
-			'C': { item: 'create:large_cogwheel' }
+			'L': { item: 'create:large_cogwheel' }
 		},
 		result: {
 			item: "create:precision_mechanism"

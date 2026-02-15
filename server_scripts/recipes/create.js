@@ -11,6 +11,7 @@ ServerEvents.recipes(event => {
 })
 
 ServerEvents.recipes(event => {
+	const saw = '#notreepunching:saws'
 	event.custom({
 		type: "overgeared:alloy_smelting",
 		ingredients: [
@@ -27,17 +28,19 @@ ServerEvents.recipes(event => {
 	event.shapeless('create:cogwheel', [
 		'create:shaft',
 		'#minecraft:planks',
-		'#notreepunching:saws'
-	]);
+		'minecraft:honeycomb',
+		saw
+	]).damageIngredient(saw);
 
 	event.shapeless('create:large_cogwheel', [
 		'create:shaft',
 		'2x #minecraft:planks',
-		'#notreepunching:saws'
-	]);
+		'minecraft:honeycomb',
+		saw
+	]).damageIngredient(saw);
 	event.shapeless('create:large_cogwheel', [
 		'create:cogwheel',
 		'#minecraft:planks',
-		'#notreepunching:saws'
-	]);
+		saw
+	]).damageIngredient(saw);
 });

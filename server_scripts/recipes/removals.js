@@ -7,9 +7,6 @@ const removed_recipes = [
 	"minecraft:stone_shovel",
 	"minecraft:stone_hoe",
 
-	"hot_iron:iron_plate",
-	"hot_iron:diamond_plate",
-
 	"create:copper_sheet",
 	"create:iron_sheet",
 	"create:golden_sheet",
@@ -23,6 +20,8 @@ const removed_recipes = [
 	"create:electron_tube",
 	"create:transmitter",
 	"create:goggles",
+	"create:incomplete_precision_mechanism",
+	"create:precision_mechanism",
 
 	"farmersdelight:cooking_pot",
 	"farmersdelight:stove",

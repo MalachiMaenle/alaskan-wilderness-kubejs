@@ -1,7 +1,7 @@
 const weapons = {
 	remove_materials: ["wooden", "stone", "copper", "iron", "golden", "diamond", "steel"],
 	type_materials: ["copper", "iron", "golden", "diamond", "steel"],
-	materials: ["overgeared:heated_copper_ingot", "overgeared:heated_iron_ingot", "minecraft:gold_ingot", "hot_iron:diamond_plate", "overgeared:heated_steel_ingot"],
+	materials: ["overgeared:heated_copper_ingot", "overgeared:heated_iron_ingot", "minecraft:gold_ingot", "minecraft:diamond", "overgeared:heated_steel_ingot"],
 	tiers: ["stone", "stone", "stone", "iron", "iron"],
 	types: ["dagger", "parrying_dagger", "longsword", "katana", "saber", "rapier", "greatsword", "battle_hammer", "warhammer", "spear", "halberd", "pike", "lance", "longbow", "heavy_crossbow", "throwing_knife", "tomahawk", "javelin", "boomerang", "battleaxe", "flanged_mace", "glaive", "quarterstaff", "scythe"],
 	patterns: {
