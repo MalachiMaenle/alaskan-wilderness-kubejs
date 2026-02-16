@@ -32,7 +32,49 @@ ServerEvents.recipes(event => {
 		needs_minigame: false,
 		show_notification: true,
 		quality_difficulty: 'none',
-		tier: "stone",
+		tier: "iron",
+		pattern: [
+			'AN'
+		],
+		key: {
+			'A': { item: 'minecraft:andesite' },
+			'N': { item: 'minecraft:iron_nugget' }
+		},
+		result: {
+			item: 'create:andesite_alloy'
+		}
+	});
+	event.custom({
+		type: 'overgeared:forging',
+		category: 'misc',
+		hammering: 3,
+		has_quality: false,
+		need_quenching: false,
+		needs_minigame: false,
+		show_notification: true,
+		quality_difficulty: 'none',
+		tier: "iron",
+		pattern: [
+			'AN'
+		],
+		key: {
+			'A': { item: 'minecraft:andesite' },
+			'N': { item: 'create:zinc_nugget' }
+		},
+		result: {
+			item: 'create:andesite_alloy'
+		}
+	});
+	event.custom({
+		type: 'overgeared:forging',
+		category: 'misc',
+		hammering: 3,
+		has_quality: false,
+		need_quenching: false,
+		needs_minigame: false,
+		show_notification: true,
+		quality_difficulty: 'none',
+		tier: "iron",
 		pattern: [
 			'A'
 		],
@@ -52,7 +94,7 @@ ServerEvents.recipes(event => {
 		needs_minigame: false,
 		show_notification: true,
 		quality_difficulty: 'none',
-		tier: "stone",
+		tier: "iron",
 		pattern: [
 			' P ',
 			'PAP',
@@ -75,7 +117,7 @@ ServerEvents.recipes(event => {
 		needs_minigame: false,
 		show_notification: true,
 		quality_difficulty: 'none',
-		tier: "stone",
+		tier: "iron",
 		pattern: [
 			' A ',
 			'PAP',
@@ -98,7 +140,7 @@ ServerEvents.recipes(event => {
 		needs_minigame: false,
 		show_notification: true,
 		quality_difficulty: 'none',
-		tier: "stone",
+		tier: "iron",
 		pattern: [
 			' A ',
 			'PPP',
@@ -121,7 +163,7 @@ ServerEvents.recipes(event => {
 		needs_minigame: false,
 		show_notification: true,
 		quality_difficulty: 'none',
-		tier: "stone",
+		tier: "iron",
 		pattern: [
 			'Q',
 			'P'
@@ -143,7 +185,7 @@ ServerEvents.recipes(event => {
 		needs_minigame: false,
 		show_notification: true,
 		quality_difficulty: 'none',
-		tier: "stone",
+		tier: "iron",
 		pattern: [
 			' R ',
 			'PPP',
@@ -167,7 +209,7 @@ ServerEvents.recipes(event => {
 		needs_minigame: false,
 		show_notification: true,
 		quality_difficulty: 'none',
-		tier: "stone",
+		tier: "iron",
 		pattern: [
 			' S ',
 			'GPG'
@@ -184,13 +226,13 @@ ServerEvents.recipes(event => {
 	event.custom({
 		type: 'overgeared:forging',
 		category: 'misc',
-		hammering: 3,
+		hammering: 10,
 		has_quality: false,
 		need_quenching: false,
-		needs_minigame: false,
+		needs_minigame: true,
 		show_notification: true,
-		quality_difficulty: 'none',
-		tier: "stone",
+		quality_difficulty: 'master',
+		tier: "iron",
 		pattern: [
 			'CIC',
 			'IPI',
@@ -202,19 +244,22 @@ ServerEvents.recipes(event => {
 			'I': { item: 'minecraft:iron_ingot' }
 		},
 		result: {
-			item: "create:incomplete_precision_mechanism"
+			item: 'create:incomplete_precision_mechanism'
+		},
+		result_failed: {
+			item: "minecraft:iron_nugget"
 		}
 	});
 	event.custom({
 		type: 'overgeared:forging',
 		category: 'misc',
-		hammering: 3,
+		hammering: 10,
 		has_quality: false,
 		need_quenching: false,
-		needs_minigame: false,
+		needs_minigame: true,
 		show_notification: true,
-		quality_difficulty: 'none',
-		tier: "stone",
+		quality_difficulty: 'master',
+		tier: "iron",
 		pattern: [
 			'LCL',
 			'LIL',
@@ -227,6 +272,9 @@ ServerEvents.recipes(event => {
 		},
 		result: {
 			item: "create:precision_mechanism"
+		},
+		result_failed: {
+			item: "minecraft:iron_nugget"
 		}
 	});
 });

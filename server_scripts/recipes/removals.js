@@ -11,6 +11,7 @@ const removed_recipes = [
 	"create:iron_sheet",
 	"create:golden_sheet",
 	"create:brass_sheet",
+	"create:andesite_alloy",
 
 	"create:wrench",
 	"create:shaft",
